@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   @@include("partials/head/meta.html") @@include("partials/head/head-links.html")
+   <link rel="stylesheet" href="@@webRoot/node_modules/swiper/swiper-bundle.min.css" />
+   @@include("partials/head/head-links.html") @@include("partials/head/analytics.html")
+   @@include("partials/head/clarity.html")
+   <title>Myraa Lens | Feature</title>
+   <style>
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .fade-in-up {
+        animation: fadeInUp 1s ease-in-out;
+    }
+
+    .fade-in-left {
+        animation: fadeInLeft 1s ease-in-out;
+    }
+
+    .fade-in-right {
+        animation: fadeInRight 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+   @@include("partials/navbar.html",{ "classList": "navbar-light w-100" })
+
+   <main>
+    <!--Pageheader start-->
+    <div class="pattern-square"></div>
+    <section class="container py-lg-8 py-5" data-cue="fadeIn">
+       <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-10 col-12" data-cues="zoomIn" data-group="page-title" data-delay="700">
+             <div class="text-center d-flex flex-column gap-5">
+                <div class="d-flex flex-column gap-3 mx-lg-8">
+                   <h1 class="mb-0 display-5">Features</h1>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <!--Pageheader end-->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">AI-Powered Monitoring</h5>
+                            <p class="card-text">Uses advanced AI to continuously oversee manufacturing processes,
+                                ensuring accuracy and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Quality Check Automation</h5>
+                            <p class="card-text">Automates inspections to maintain high-quality standards and minimize
+                                defects, reducing human error.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Warning and Emergency Alerts</h5>
+                            <p class="card-text">Provides immediate notifications for detected issues, enhancing
+                                workplace safety and enabling prompt responses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-Time Hazard Alarms</h5>
+                            <p class="card-text">Detects and alerts personnel to potential hazards instantly,
+                                preventing accidents and ensuring a safer environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Remote Accessibility</h5>
+                            <p class="card-text">Employs drones and cameras to monitor and inspect hard-to-reach or
+                                hazardous areas, facilitating remote oversight.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Clear Audits</h5>
+                            <p class="card-text">Utilizes blockchain technology to create tamper-proof, reliable
+                                audit trails, ensuring accurate and credible documentation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Operational Overview</h5>
+                            <p class="card-text">Offers a comprehensive, real-time view of all operations, enabling
+                                informed decision-making and enhanced productivity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-4 fade-in-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Mixed Reality Training</h5>
+                            <p class="card-text">Provides immersive training experiences and skill validation through
+                                mixed reality, reducing training time and costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+
+   <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html") @@include("partials/scripts.html")</footer>
+
+   <script src="@@webRoot/node_modules/scrollcue/scrollCue.min.js"></script>
+   <script src="@@webRoot/assets/js/vendors/scrollcue.js"></script>
+
+   <!-- Swiper JS -->
+   <script src="@@webRoot/node_modules/swiper/swiper-bundle.min.js"></script>
+   <script src="@@webRoot/assets/js/vendors/swiper.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head/meta.html") @@include("partials/head/head-links.html")
+    @@include("partials/head/analytics.html") @@include("partials/head/clarity.html")
+    <title>Myraa Lens | Industries and Applications</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Header Animation */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-header {
+    animation: slideInDown 0.6s ease-out;
+}
+
+/* Section Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-section {
+    animation: fadeInUp 0.8s ease-out;
+    animation-delay: 0.2s;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .order-2 {
+        order: 1;
+    }
+}
+    </style>
+</head>
+
+<body>
+    @@include("partials/navbar.html",{ "classList": " navbar-light w-100" })
+    <main>
+        <div class="pattern-square"></div>
+        <!--Pageheader start-->
+        <section class="py-5 py-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-md-12 col-12">
+                        <div class="text-center">
+                            <h1 class="mt-4">Industries and Applications</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pageheader end-->
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Oil and Gas Industry</h2>
+
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center animate-section">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Leak Detection</h3>
+                            <p>
+                                Myraa Lens uses AI to monitor pipelines and equipment for leaks in real time,
+                                providing early warnings to prevent environmental damage and ensure operational
+                                safety.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/leaking.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Equipment Monitoring</h3>
+
+                            <p class="mb-0">Continuous oversight of critical equipment detects signs of wear and tear or
+                                malfunction, allowing for timely maintenance and reducing the risk of equipment failure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Safety and Compliance</h3>
+                            <p>
+                                Real-time alerts for potential hazards like gas leaks or equipment malfunctions enhance
+                                safety and maintain regulatory compliance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/safety.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/remote.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Remote Accessibility</h3>
+
+                            <p class="mb-0">Drones and mobile cameras equipped with Myraa Lens inspect hard-to-reach or
+                                hazardous areas, reducing the need for personnel exposure to danger.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Optimization</h3>
+                            <p>
+                                Myraa Lens offers a comprehensive view of all activities, helping managers identify
+                                constrictions and optimize processes for better efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/process.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/pipeline.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Pipeline Management</h3>
+
+                            <p class="mb-0"> Uses digital twin technology to simulate and manage pipeline operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Aerospace Industry</h2>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Screw Tightness Detection</h3>
+                            <p>
+                                Ensures the integrity and safety of aircraft by checking the tightness of screws.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/screw.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/twin.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Digital Twin for Aircraft Maintenance</h3>
+
+                            <p class="mb-0">Simulates aircraft systems for predictive maintenance and optimization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Foreign Object Detection</h3>
+                            <p>
+                                Identifies foreign objects in assembly areas to prevent potential damage and ensure
+                                safety.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/foreign.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Steel Industry</h2>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Motor Repair Logistics</h3>
+                            <p>
+                                Monitors the logistics of motor repairs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/motor.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/twin.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Manufacturing Optimization</h3>
+
+                            <p class="mb-0">Enhances manufacturing processes using digital twin simulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Object Recognition</h3>
+                            <p>
+                                Recognizes different shapes of bars for better inventory management.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/object.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Construction Industry</h2>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Site Monitoring</h3>
+                            <p>
+                                Uses drones and cameras to monitor construction sites, ensuring safety and project
+                                progress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/site monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/project management.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Project Management</h3>
+
+                            <p class="mb-0">Simulates construction processes for better planning and management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Quality Inspections</h3>
+                            <p>
+                                Automates construction quality inspection, ensuring compliance with standards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/quality inspection.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Logistics and Supply Chain</h2>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Inventory Management</h3>
+                            <p>
+                                Uses AI to track and manage inventory, ensuring optimal stock levels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/inventory management.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/suppy-chain-optimization.png"
+                                alt="service" class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Supply Chain Optimization</h3>
+
+                            <p class="mb-0">Simulates supply chain processes for efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Shipment Monitoring</h3>
+                            <p>
+                                Monitors the status and condition of shipments in real time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/shipment-monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- main section -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <h2 class="mb-2">Healthcare Industry</h2>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Equipment Monitoring</h3>
+                            <p>
+                                Myraa Lens continuously monitors medical equipment to ensure it functions correctly and
+                                safely. Any deviations or potential failures are detected in real-time, allowing
+                                immediate corrective actions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/equipment-monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/detection-of-visible-health.png"
+                                alt="service" class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Detection of Visible Health Conditions</h3>
+
+                            <p class="mb-0"> AI is used to monitor patients' visible health conditions, providing
+                                real-time alerts for any concerning changes, thus enhancing the quality of patient care
+                                and early intervention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Safety Alerts</h3>
+                            <p>
+                                Provides real-time alerts for any safety issues within healthcare facilities, such as
+                                equipment malfunctions or hazardous conditions, ensuring prompt responses to prevent
+                                accidents and ensure patient safety.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/safety-alerts.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/human-patient-monitoring.png"
+                                alt="service" class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Human Twin for Patient Monitoring</h3>
+
+                            <p class="mb-0">Simulates patient health data to provide a comprehensive view of patient
+                                conditions, enabling improved care and monitoring through predictive analytics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Operational Efficiency</h3>
+                            <p>
+                                By creating a digital twin of hospital operations, Myraa Lens provides a comprehensive
+                                overview of workflows, helping to identify bottlenecks, optimize resource allocation,
+                                and streamline processes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/operational-efficiency.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/remote-accessibility.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Remote Accessibility</h3>
+
+                            <p class="mb-0"> Allows for remote monitoring and diagnostics using mobile cameras and
+                                wearables, reducing the need for physical presence in potentially hazardous or
+                                hard-to-reach areas within the facility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Compliance and Audits</h3>
+                            <p>
+                                Ensures all operations are compliant with healthcare regulations by maintaining detailed
+                                and tamper-proof audit trails, facilitating easier and more accurate regulatory
+                                compliance.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/compliance-audits.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/predictive-maintenance.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Predictive Maintenance</h3>
+
+                            <p class="mb-0"> Utilizes predictive analytics to foresee equipment maintenance needs before
+                                failures occur, ensuring continuous operation and reducing downtime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- main section start -->
+            <section class="mb-xl-9 py-5">
+                <div class="container">
+                    <h2 class="mb-2">Utilities Industry</h2>
+                    <!-- right side img left side details -->
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-6 order-2">
+                            <div class="mb-5">
+                                <h3 class="mb-2">Infrastructure Inspection</h3>
+                                <p>
+                                    Uses drones and cameras to inspect infrastructure like power lines and water pipes
+                                    for any issues.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                            <figure class="mb-5 mb-md-0">
+                                <img src="./assets/images/industriesAndApplication/infrastructure-inspection.png"
+                                    alt="service" class="rounded-3 img-fluid hover-scale" />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- left side img right side details -->
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-6">
+                            <figure class="mb-5 mb-md-0">
+                                <img src="./assets/images/industriesAndApplication/safety-monitoring.png" alt="service"
+                                    class="rounded-3 img-fluid hover-scale" />
+                            </figure>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                            <div class="mb-5">
+                                <h3 class="mb-2">Safety Monitoring</h3>
+
+                                <p class="mb-0">Provides real-time monitoring of utility sites to ensure safety and
+                                    compliance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- main section start -->
+            <section class="mb-xl-9 py-5">
+                <div class="container">
+                    <h2 class="mb-2">Maritime Industry</h2>
+                    <!-- right side img left side details -->
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-6 order-2">
+                            <div class="mb-5">
+                                <h3 class="mb-2">Vessel Inspection</h3>
+                                <p>
+                                    Uses AI and drones to inspect ships for maintenance and safety.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                            <figure class="mb-5 mb-md-0">
+                                <img src="./assets/images/industriesAndApplication/vessel-inspection.png"
+                                    alt="service" class="rounded-3 img-fluid hover-scale" />
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- left side img right side details -->
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-6">
+                            <figure class="mb-5 mb-md-0">
+                                <img src="./assets/images/industriesAndApplication/process-twin-for-fleet-management.png" alt="service"
+                                    class="rounded-3 img-fluid hover-scale" />
+                            </figure>
+                        </div>
+                        <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                            <div class="mb-5">
+                                <h3 class="mb-2">Process Twin for Fleet Management</h3>
+
+                                <p class="mb-0">Uses digital twin technology to optimize fleet operations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html") @@include("partials/scripts.html")</footer>
+</body>
+
+</html>
