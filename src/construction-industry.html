@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head/meta.html") @@include("partials/head/head-links.html")
+    @@include("partials/head/analytics.html") @@include("partials/head/clarity.html")
+    <title>Myraa Lens | Industries and Applications</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        /* Header Animation */
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-header {
+            animation: slideInDown 0.6s ease-out;
+        }
+
+        /* Section Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-section {
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.2s;
+        }
+
+        /* Responsive Enhancements */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.5em;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .order-2 {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    @@include("partials/navbar.html",{ "classList": " navbar-light w-100" })
+    <main>
+        <div class="pattern-square"></div>
+        <!--Pageheader start-->
+        <section class="py-5 py-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-md-12 col-12">
+                        <div class="text-center">
+                            <h1 class="mt-4">Construction Industry</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pageheader end-->
+        <!-- main section start -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Site Monitoring</h3>
+                            <p>
+                                Uses drones and cameras to monitor construction sites, ensuring safety and project
+                                progress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/site monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/project management.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Project Management</h3>
+
+                            <p class="mb-0">Simulates construction processes for better planning and management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Quality Inspections</h3>
+                            <p>
+                                Automates construction quality inspection, ensuring compliance with standards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/quality inspection.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html")
+        @@include("partials/scripts.html")</footer>
+</body>
+
+</html>

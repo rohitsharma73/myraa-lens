@@ -7,69 +7,6 @@
     @@include("partials/head/analytics.html")
     @@include("partials/head/clarity.html")
     <title>Myraa Lens | Solution</title>
-    <style>
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        .fade-in-left {
-            animation: fadeInLeft 1s ease-in-out;
-        }
-
-        .fade-in-right {
-            animation: fadeInRight 1s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -142,98 +79,114 @@
             </div>
         </section>
 
-        <section id="myraa-solutions" class="py-5">
+        <section class="mb-xl-9 my-4">
             <div class="container">
                 <h2 class="text-center mb-4 fade-in">Myraa Lens Solutions</h2>
-                <div class="accordion fade-in-up" id="solutionsAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Automated Training and Skill Validation
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#solutionsAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Mixed Reality Training:</strong> Reduces training time and costs by providing
-                                    immersive, hands-on training experiences.</p>
-                                <p><strong>Remote Guidance:</strong> Allows experts to train workers remotely, breaking
-                                    geographical constraints.</p>
+                <div class="row">
+                    <div class="col-12">
+                        <article class="row d-flex align-items-center mb-7 mb-md-5">
+                            <div class="col-lg-5 col-xl-5 col-md-12 col-12">
+                                <figure class="mb-4 mb-lg-0 zoom-img">
+                                    <a>
+                                        <img src="@@webRoot/assets/images/blog/blog-img-9.jpg" alt="blog"
+                                            class="img-fluid rounded-3" />
+                                    </a>
+                                </figure>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Enhanced Quality Control
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#solutionsAccordion">
-                            <div class="accordion-body">
-                                <p><strong>AI-Powered Monitoring:</strong> Automates quality checks, ensuring
-                                    consistency and reducing human error.</p>
-                                <p><strong>Real-Time Feedback:</strong> Provides immediate alerts for any discrepancies,
-                                    enabling quick corrective actions.</p>
+                            <div class="col-lg-7 col-xl-7 col-md-12 col-12">
+                                <div class="ms-lg-4">
+                                    <div class="mb-4">
+                                        <h3 class="lh-base h4">
+                                            Automated Training and Skill Validation
+                                        </h3>
+                                        <p>
+                                            <strong>Mixed Reality Training:</strong> Reduces training time and costs by
+                                            providing
+                                            immersive, hands-on training experiences.
+                                        </p>
+                                        <p><strong>Remote Guidance:</strong> Allows experts to train workers remotely,
+                                            breaking
+                                            geographical constraints.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Comprehensive Safety Measures
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#solutionsAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Real-Time Hazard Alarms:</strong> Detects potential hazards instantly,
-                                    ensuring a safer working environment.
-                                </p>
-                                <p><strong>Warning and Emergency Alerts:</strong> Issues immediate notifications to
-                                    prevent accidents and improve response times.
-                                </p>
+                        </article>
+                        <article class="row d-flex align-items-center mb-7 mb-md-5">
+                            <div class="col-lg-5 col-xl-5 col-md-12 col-12">
+                                <figure class="mb-4 mb-xl-0 zoom-img">
+                                    <a>
+                                        <img src="@@webRoot/assets/images/blog/blog-img-1.jpg" alt="blog"
+                                            class="img-fluid rounded-3" />
+                                    </a>
+                                </figure>
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Improved Audit Trail
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#solutionsAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Blockchain Integration:</strong> Maintains tamper-proof, credible records of
-                                    all activities, ensuring reliable documentation.
-                                </p>
-                                <p><strong>Provides comprehensive audit trails that facilitate quicker and more accurate
-                                        investigations.</p>
+                            <div class="col-lg-7 col-xl-7 col-md-12 col-12">
+                                <div class="ms-lg-4">
+                                    <div class="mb-4">
+                                        <h3 class="lh-base h4">
+                                            Enhanced Quality Control
+                                        </h3>
+                                        <p><strong>AI-Powered Monitoring:</strong> Automates quality checks, ensuring
+                                            consistency and reducing human error.</p>
+                                        <p><strong>Real-Time Feedback:</strong> Provides immediate alerts for any
+                                            discrepancies,
+                                            enabling quick corrective actions.</p>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Increased Operational Efficiency
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#solutionsAccordion">
-                            <div class="accordion-body">
-                                <p><strong>Remote Accessibility:</strong> Uses drones and cameras to monitor
-                                    hard-to-reach areas, reducing the need for manual inspections.</p>
-                                <p><strong>Operational Overview:</strong> Offers a bird’s-eye view of all operations in
-                                    real-time, helping managers make informed decisions and improve productivity.
-                                </p>
+                        </article>
+                        <article class="row d-flex align-items-center mb-7 mb-md-5">
+                            <div class="col-lg-5 col-xl-5 col-md-12 col-12">
+                                <figure class="mb-4 mb-xl-0 zoom-img">
+                                    <a>
+                                        <img src="@@webRoot/assets/images/blog/blog-img-2.jpg" alt="blog"
+                                            class="img-fluid rounded-3" />
+                                    </a>
+                                </figure>
                             </div>
-                        </div>
+                            <div class="col-lg-7 col-xl-7 col-md-12 col-12">
+                                <div class="ms-lg-4">
+                
+                                    <div class="mb-4">
+                                        <h3 class="lh-base h4">
+                                            Comprehensive Safety Measures
+                                        </h3>
+                                        <p><strong>Real-Time Hazard Alarms:</strong> Detects potential hazards instantly,
+                                            ensuring a safer working environment.
+                                        </p>
+                                        <p><strong>Warning and Emergency Alerts:</strong> Issues immediate notifications to
+                                            prevent accidents and improve response times.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="row d-flex align-items-center mb-7 mb-md-5">
+                            <div class="col-lg-5 col-xl-5 col-md-12 col-12">
+                                <figure class="mb-4 mb-xl-0 zoom-img">
+                                    <a>
+                                        <img src="@@webRoot/assets/images/blog/blog-img-4.jpg" alt="blog"
+                                            class="img-fluid rounded-3" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-lg-7 col-xl-7 col-md-12 col-12">
+                                <div class="ms-lg-4">
+                                    <div class="mb-4">
+                                        <h3 class="lh-base h4">
+                                            Improved Audit Trail
+                                        </h3>
+                                        <p><strong>Blockchain Integration:</strong> Maintains tamper-proof, credible records of
+                                            all activities, ensuring reliable documentation.
+                                        </p>
+                                        <p><strong>Provides comprehensive audit trails that facilitate quicker and more accurate
+                                            investigations.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -306,7 +259,8 @@
         </section>
     </main>
 
-    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html") @@include("partials/scripts.html")</footer>
+    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html")
+        @@include("partials/scripts.html")</footer>
 
     <script src="@@webRoot/node_modules/scrollcue/scrollCue.min.js"></script>
     <script src="@@webRoot/assets/js/vendors/scrollcue.js"></script>

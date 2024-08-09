@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head/meta.html") @@include("partials/head/head-links.html")
+    @@include("partials/head/analytics.html") @@include("partials/head/clarity.html")
+    <title>Myraa Lens | Industries and Applications</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        /* Header Animation */
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-header {
+            animation: slideInDown 0.6s ease-out;
+        }
+
+        /* Section Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-section {
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.2s;
+        }
+
+        /* Responsive Enhancements */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.5em;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .order-2 {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    @@include("partials/navbar.html",{ "classList": " navbar-light w-100" })
+    <main>
+        <div class="pattern-square"></div>
+        <!--Pageheader start-->
+        <section class="py-5 py-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-md-12 col-12">
+                        <div class="text-center">
+                            <h1 class="mt-4">Oil and Gas Industry</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pageheader end-->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center animate-section">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Leak Detection</h3>
+                            <p>
+                                Myraa Lens uses AI to monitor pipelines and equipment for leaks in real time,
+                                providing early warnings to prevent environmental damage and ensure operational
+                                safety.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/leaking.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Equipment Monitoring</h3>
+
+                            <p class="mb-0">Continuous oversight of critical equipment detects signs of wear and tear or
+                                malfunction, allowing for timely maintenance and reducing the risk of equipment failure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Safety and Compliance</h3>
+                            <p>
+                                Real-time alerts for potential hazards like gas leaks or equipment malfunctions enhance
+                                safety and maintain regulatory compliance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/safety.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/remote.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Remote Accessibility</h3>
+
+                            <p class="mb-0">Drones and mobile cameras equipped with Myraa Lens inspect hard-to-reach or
+                                hazardous areas, reducing the need for personnel exposure to danger.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Optimization</h3>
+                            <p>
+                                Myraa Lens offers a comprehensive view of all activities, helping managers identify
+                                constrictions and optimize processes for better efficiency.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/process.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/pipeline.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Process Twin for Pipeline Management</h3>
+
+                            <p class="mb-0"> Uses digital twin technology to simulate and manage pipeline operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html")
+        @@include("partials/scripts.html")</footer>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("partials/head/meta.html") @@include("partials/head/head-links.html")
+    @@include("partials/head/analytics.html") @@include("partials/head/clarity.html")
+    <title>Myraa Lens | Industries and Applications</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        /* Header Animation */
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-header {
+            animation: slideInDown 0.6s ease-out;
+        }
+
+        /* Section Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-section {
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.2s;
+        }
+
+        /* Responsive Enhancements */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.5em;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .order-2 {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    @@include("partials/navbar.html",{ "classList": " navbar-light w-100" })
+    <main>
+        <div class="pattern-square"></div>
+        <!--Pageheader start-->
+        <section class="py-5 py-lg-8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 col-md-12 col-12">
+                        <div class="text-center">
+                            <h1 class="mt-4">Healthcare Industry</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Pageheader end-->
+        <!-- main section -->
+        <section class="mb-xl-9 py-5">
+            <div class="container">
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Equipment Monitoring</h3>
+                            <p>
+                                Myraa Lens continuously monitors medical equipment to ensure it functions correctly and
+                                safely. Any deviations or potential failures are detected in real-time, allowing
+                                immediate corrective actions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/equipment-monitoring.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/detection-of-visible-health.png"
+                                alt="service" class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Detection of Visible Health Conditions</h3>
+
+                            <p class="mb-0"> AI is used to monitor patients' visible health conditions, providing
+                                real-time alerts for any concerning changes, thus enhancing the quality of patient care
+                                and early intervention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Safety Alerts</h3>
+                            <p>
+                                Provides real-time alerts for any safety issues within healthcare facilities, such as
+                                equipment malfunctions or hazardous conditions, ensuring prompt responses to prevent
+                                accidents and ensure patient safety.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/safety-alerts.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/human-patient-monitoring.png"
+                                alt="service" class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Human Twin for Patient Monitoring</h3>
+
+                            <p class="mb-0">Simulates patient health data to provide a comprehensive view of patient
+                                conditions, enabling improved care and monitoring through predictive analytics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Operational Efficiency</h3>
+                            <p>
+                                By creating a digital twin of hospital operations, Myraa Lens provides a comprehensive
+                                overview of workflows, helping to identify bottlenecks, optimize resource allocation,
+                                and streamline processes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/operational-efficiency.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/remote-accessibility.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Remote Accessibility</h3>
+
+                            <p class="mb-0"> Allows for remote monitoring and diagnostics using mobile cameras and
+                                wearables, reducing the need for physical presence in potentially hazardous or
+                                hard-to-reach areas within the facility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side img left side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6 order-2">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Compliance and Audits</h3>
+                            <p>
+                                Ensures all operations are compliant with healthcare regulations by maintaining detailed
+                                and tamper-proof audit trails, facilitating easier and more accurate regulatory
+                                compliance.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 order-lg-2">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/compliance-audits.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- left side img right side details -->
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-5 col-md-6">
+                        <figure class="mb-5 mb-md-0">
+                            <img src="./assets/images/industriesAndApplication/predictive-maintenance.png" alt="service"
+                                class="rounded-3 img-fluid hover-scale" />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div class="mb-5">
+                            <h3 class="mb-2">Predictive Maintenance</h3>
+
+                            <p class="mb-0"> Utilizes predictive analytics to foresee equipment maintenance needs before
+                                failures occur, ensuring continuous operation and reducing downtime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>@@include("partials/footer.html") @@include("partials/btn-scroll-top.html")
+        @@include("partials/scripts.html")</footer>
+</body>
+
+</html>
